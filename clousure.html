@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Closure</title>
+	<script type="text/javascript">
+		function addnum(first,second){
+			var returrnvalue="Result is: ";
+			function add()
+			{
+				return returrnvalue+(first+second);
+			}
+			return add();
+		}
+	</script>
+
+</head>
+<body>
+	<script type="text/javascript">
+		var a=addnum(4,5);
+		document.write(a);
+	</script>
+
+</body>
+</html>
