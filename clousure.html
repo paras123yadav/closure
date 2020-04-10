@@ -4,21 +4,18 @@
 	<title>Closure</title>
 	<script type="text/javascript">
 		function addnum(first,second){
-			var returnvalue="Result is: ";
 			function add()
 			{
-				return returnvalue+(first+second);
+				return "Result is: "+(first+second);
 			}
 			return add();
 		}
+		var a=addnum(4,5);
+		document.write(a);
 	</script>
 
 </head>
 <body>
-	<script type="text/javascript">
-		var a=addnum(4,5);
-		document.write(a);
-	</script>
 
 </body>
 </html>
