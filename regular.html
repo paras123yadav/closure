@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>regular expression</title>
+        <script>
+            function valid()
+            {
+                var username= document.getElementById("user").value;
+                var name=/@gmail.com/;
+                if(name.test(username))
+                {
+                    alert("valid");
+                }
+                else
+                {
+                    alert("Invalid!!");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input id="user" type="text" placeholder="username"/>
+            <button onclick="valid()" type="button">submit</button>
+        </form>
+    </body>
+</html>
