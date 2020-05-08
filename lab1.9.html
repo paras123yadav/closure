@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script>
+        function create()
+        {
+            if(document.form.username.value == "")
+        }
+        {
+            alert("enter something");
+            return;
+        }
+        var cookievalue = escape(document.form.username.value);
+        document.cookie = "name" + cookievalue;
+        document.write("setting cookie:" + "name" + cookievalue);
+    </script>
+</head>
+<body>
+    <form name="form">
+        <input type="text" name="username"/>
+        <input type="submit" value="set cookie" onclick="create()"/>
+    </form>
+</body>
+</html>

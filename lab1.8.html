@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script>
+        function run()
+        {
+            var x = 123;
+            try
+            {
+                var b = x.uppercase();
+                alert("value is" + x);
+            }
+            catch(c)
+            {
+                alert("error occured");
+            }
+            finally
+            {
+                alert("this will execute always");
+            }
+        }
+    </script>
+</head>
+<body>
+    <p> click the button</p>
+    <form>
+        <input type="button" value="Click Me" onclick="run()"/>
+    </form>
+</body>
+</html>
